@@ -32,15 +32,18 @@ public class TextScroller : MonoBehaviour
     {
         Debug.Log("½ÇÇà2");
         string lyricsData = lyricsDataManager.GetLyrics(lyricsId, lyricsIndex);
-        while (lyricsId <= 2)
+        while (lyricsId <= 5)
         {
             lyricsData = lyricsDataManager.GetLyrics(lyricsId, lyricsIndex);
             if (lyricsData == null)
             {
                 lyricsIndex = 0;
                 lyricsId++;
-                if (lyricsId >= 3)
+                if (lyricsId >= 6)
+                {
+                    lyricsText.text = "";
                     break;
+                }
             }
             lyricsData = lyricsDataManager.GetLyrics(lyricsId, lyricsIndex);
             lyricsText.text = lyricsData;
