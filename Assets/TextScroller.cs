@@ -48,7 +48,7 @@ public class TextScroller : MonoBehaviour
             lyricsData = lyricsDataManager.GetLyrics(lyricsId, lyricsIndex);
             lyricsText.text = lyricsData;
             lyricsIndex++;
-            yield return new WaitForSeconds((60f/119f) * 4f);
+            yield return new WaitForSeconds((60f/119f) * 2f);
         }
 
     }
