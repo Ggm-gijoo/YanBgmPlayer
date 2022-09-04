@@ -375,7 +375,7 @@ MonoBehaviour:
   colorBackgroundImage: {fileID: 1428936642}
   volumeProfile: {fileID: 11400000, guid: c14a5a1aade7aa745a4a42c234f8e3b4, type: 2}
   textLyrics: {fileID: 31468152}
-  bloonInt: 5
+  bloonInt: 8
 --- !u!212 &236660454
 SpriteRenderer:
   m_ObjectHideFlags: 0
